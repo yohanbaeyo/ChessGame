@@ -18,10 +18,10 @@ data class Cell(val position: Position, var piece: Piece = Piece.makePiece(), va
             }
         }
         g.fillRect(Board.marginX + position.x, Board.marginY + position.y, Board.cellSize, Board.cellSize)
-//        piece.display(g, position)
-        if(selected == CellFeature.SELECTED) {
-            piece.displayMovable(g, position)
-        }
+        piece.display(g, position)
+//        if(selected == CellFeature.SELECTED) {
+//            piece.displayMovable(g, position)
+//        }
     }
 
 
